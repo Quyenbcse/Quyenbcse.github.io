@@ -2,80 +2,106 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />// tiếng việt
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">//ko qtam
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!----code theo chuẩn responsive(tối ưu 
-        giao diện trên mọi màn hình)-->
-
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <!--title trên tap website-->
-
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />//css
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <!--add java script html xương sống, css trang điểm-->
-    <!--id là 1 khối code và mỗi khối code ko được trùng nhau-->
+    <!--internal css
+    <style>
+        #id {}
+        
+        .color-title {
+            color: red;
+            background-color: cornflowerblue;
+        }
+    </style>-->
 
 </head>
 
 <body>
-
-    <!--header(code nav)-->
-    <!--1.Navbar-->
     <header>
-        <nav>
-            <!--list-->
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
 
+        <nav>
+            <div class="container">
+                <span>Me</span>
+                <ul>
+                    <li><a href="#"> Who</a></li>
+                    <li><a href="">What</a></li>
+                    <li><a href="">Where</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <!--main-->
+
+    <!--inline:<h1 style="color:red; background-color: yellow">Hello</h1>-->
     <main>
-        <!--title-->
-        <h1>Hello</h1>
-        <h2>Hello</h2>
-        <h3>Hello</h3>
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-        <h4>Hello</h4>
-        <!--Link-->
-        <a href="http://tinhte.vn/">click here</a>
-        <a href="http://tinhte.vn/" target="_bank">click here</a>
-        <!--p(Viết đoạn văn không xuống dòng)-->
-        <p>My năm is my hoa</p>
-        <p>My năm is my hoa</p>
-        <!--span-->
-        <!--không gian thẻ(thẻ p có ko gian thẻ span(ko có ko gian))-->
-        <span>My hoa</span>
-        <span>My hoa</span>
-        <br>
-        <!--b& strong-->
-        <b>is b</b>
-        <strong>is strong</strong>
-        <table border="1">
-            <tr>
-                <td>
-                    <h1>1</h1>
-                </td>
-                <td>2</td>
-            </tr>
-            <tr>
+        <!--external:<h1 class="color-title">Hello</h1>-->
 
-                <td>3</td>
-                <td>4</td>
-            </tr>
-        </table>
+        <section id="cover" class="tex-center">
+            <div class="container">
+                <h2>Who am I</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bald_Eagle_-_%22Helga%22_-_Haliaeetus_leucocephalus2.jpg/300px-Bald_Eagle_-_%22Helga%22_-_Haliaeetus_leucocephalus2.jpg" alt="aa" />
+                <h2>I'm a developer</h2>
+
+            </div>
+        </section>
+        <section id="about" class="tex-center">
+            <div>
+                <h2>What is matter</h2>
+                <p>Cách chia động từ là vấn đề rất quan trọng. Vì thế, bạn hãy cố gắng nhớ để áp dụng trong các bài học sau. Thêm vào đó, thể Te là một thể rất phổ biến trong ngôn ngữ giao tiếp mà người Nhật sử dụng trong đời sống sinh hoạt rất nhiều. </p>
+                <button>Search</button>
+            </div>
+        </section>
+        <section id="gallery" class="tex-center">
+            <div>
+
+                <h2>Where To Find Me? </h2>
+                <div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <img src="https://www.w3schools.com/bootstrap/birds2.jpg" alt="">
+                        </p>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <img src="https://www.w3schools.com/bootstrap/birds2.jpg" alt="">
+                        </p>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <img src="https://www.w3schools.com/bootstrap/birds1.jpg" alt="">
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+
+
+            </div>
+        </section>
+        <section id="contaxt">
+            <div>
+                <nav>
+
+                </nav>
+            </div>
+        </section>
     </main>
-
-    <!--4.footer-->
-    <footer>
-
+    <footer class="tex-center">
+        <p>Bootstrap Theme Made By
+            <a href="">www.w3schools.com</a> </p>
     </footer>
+
+
 </body>
 
 </html>
-<!--Max width:768px-->
